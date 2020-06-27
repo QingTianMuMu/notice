@@ -15,7 +15,9 @@ public class MyJob implements Job {
 
     @Override
     public void execute(JobExecutionContext context)throws JobExecutionException {
-        log.info("=====  MyJob  is start ..................");
+        log.info("=====  MyJob  is startaa ..................");
+        log.info("=====  MyJob  is startbb ..................");
+        log.info("=====  MyJob  is startcc ..................");
 
         log.info("=====  Hello quzrtz  "+
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ").format(new Date()));
