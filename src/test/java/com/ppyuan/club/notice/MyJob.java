@@ -18,6 +18,9 @@ public class MyJob implements Job {
         log.info("=====  MyJob  is cc start ..................");
         log.info("=====  MyJob  is dd start ..................");
         log.info("=====  MyJob  is mm start ..................");
+        log.info("=====  MyJob  is startaa ..................");
+        log.info("=====  MyJob  is startbb ..................");
+        log.info("=====  MyJob  is startcc ..................");
 
         log.info("=====  Hello quzrtz  "+
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ").format(new Date()));
