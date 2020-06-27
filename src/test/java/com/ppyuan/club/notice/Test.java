@@ -23,9 +23,8 @@ public class Test {
     public void test1(){
 
 
-
-
-        System.out.println(Math.ceil(11.4));
+        System.out.println(Math.ceil(6.9));
+        System.out.println(Math.ceil(6.1));
         System.out.println(Math.floor(11.4));
         System.out.println(Math.round(11.4));
     }
