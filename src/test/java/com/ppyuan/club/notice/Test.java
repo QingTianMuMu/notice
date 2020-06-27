@@ -23,6 +23,8 @@ public class Test {
     public void test1(){
 
 
+        System.out.println(Math.ceil(9.6));
+        System.out.println(Math.ceil(9.1));
         System.out.println(Math.ceil(6.9));
         System.out.println(Math.ceil(6.1));
         System.out.println(Math.floor(11.4));
