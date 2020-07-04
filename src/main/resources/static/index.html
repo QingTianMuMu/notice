@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script language="JavaScript" src="js/jquery-3.5.1.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+
+
+<script>
+
+    function find() {
+        var date = $("#date").val();
+        var phone = $("#phone").val();
+        $.ajax({
+            type: "post",
+            url: "/notice/find",
+            data: {'date': date, 'phone': phone},
+            success: function (data) {
+                var list = data.data;
+               if (null != list && "" != list) {
+                   $("#table tr:not(:first)").empty("");
+                   $("#div").html("");
+                   showData(list);+
+                   $("#table").show();
+               }else {
+                   $("#table").hide();
+                   $("#div").html("找不到数据！");
+               }
+            },
+            dataType: "json"
+        });
+    }
+
+    function showData(list){
+        var str = "";
+        for (var i = 0; i < list.length; i++) {
+            str = "<tr><td>" + (i+1) + "</td><td>"
+                + list[i].title + "</td><td>"
+                + list[i].phone + "</td><td>"
+                + list[i].date + "</td><td>"
+                + list[i].content + "</td><td>"
+                + list[i].count + "</td><td>"
+                +"<a href=''>修改</a>&nbsp; &nbsp;<a href=''>删除</a></td><td hidden='hidden'>"
+                +list[i].id+"</td></tr>";
+            $("#table").append(str);
+        }
+    }
+
+</script>
+
+<body>
+    <form id="findForm" method="post">
+        <div>
+            <table>
+                <tr>
+                    <td>
+                       时间： <input type="date" id="date">
+                    </td>
+                    <td>
+                       手机号：<input type="text" id="phone">
+                    </td>
+                    <td>
+                        <input type="button" value="查询" id = "button" onclick="find()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+<br>
+<table id = "table" border="1" cellpadding="0" cellspacing="0" hidden="hidden">
+    <tr>
+        <td>序号</td>
+        <td>标题</td>
+        <td>手机号</td>
+        <td>时间</td>
+        <td>消息内容</td>
+        <td>状态</td>
+        <td>操作</td>
+    </tr>
+</table>
+<div id="div"></div>
+</body>
+</html>

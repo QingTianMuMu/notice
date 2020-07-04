@@ -12,6 +12,7 @@ public class HelloJobDetail extends JobDetailImpl {
 
     public void execute()   {
         /*System.out.println("hello Job "+getKey());*/
+        System.out.println("qwewqe");
         System.out.println("zzzzzz");
     }
 }
