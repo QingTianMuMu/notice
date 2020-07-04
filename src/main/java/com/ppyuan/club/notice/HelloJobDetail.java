@@ -16,5 +16,6 @@ public class HelloJobDetail extends JobDetailImpl {
 
         System.out.println("disanci");
         System.out.println("disici");
+        System.out.println("第六次");
     }
 }
