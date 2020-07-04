@@ -14,12 +14,9 @@ public class HelloJobDetail extends JobDetailImpl {
         System.out.println("qwewqe");
         System.out.println("zzzzzz");
         System.out.println("disanci");
-        System.out.println("disici");
-         System.out.println("diwuci");
-<<<<<<< .mine
-        System.out.println("diwuci");
-=======
-        System.out.println("disici");
->>>>>>> .theirs
+        System.out.println("第7次");
+
+
+
     }
 }
