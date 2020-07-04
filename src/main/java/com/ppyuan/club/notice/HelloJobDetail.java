@@ -15,15 +15,14 @@ public class HelloJobDetail extends JobDetailImpl {
         System.out.println("zzzzzz");
         System.out.println("disanci");
         System.out.println("disici");
-<<<<<<< HEAD
-        System.out.println("第六次");
-=======
-         System.out.println("diwuci");
-<<<<<<< .mine
+
+
         System.out.println("diwuci");
-=======
+
+        System.out.println("diwuci");
+
         System.out.println("disici");
->>>>>>> .theirs
->>>>>>> 597c97537564f9dd9bda4de4889d2b979313e738
+
+        System.out.println("第六次");
     }
 }
