@@ -10,24 +10,6 @@ import org.quartz.spi.TriggerFiredBundle;
 public class HelloJobDetail extends JobDetailImpl {
 
     public void execute()   {
-        /*System.out.println("hello Job "+getKey());*/
-        System.out.println("qwewqe");
-        System.out.println("zzzzzz");
-        System.out.println("disanci");
-
-
-
-        System.out.println("disici");
-
-
-        System.out.println("diwuci");
-
-        System.out.println("diwuci");
-
-        System.out.println("disici");
-
-        System.out.println("第六次");
-
-        System.out.println("第7次");
+        System.out.println("333----第3次！");
     }
 }
